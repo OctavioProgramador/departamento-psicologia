@@ -1,0 +1,17 @@
+on:         
+  workflow_dispatch:
+
+name: php check
+jobs:
+  php-check:
+    name:  Check
+    runs-on: ubuntu-latest
+    steps:
+    - name: Get latest code
+      uses: actions/checkout@v2
+    - name: PHP Syntax Checker (Lint)
+      # You may pin to the exact commit or the version.
+      # uses: StephaneBour/actions-php-lint@ec7976a43271a60518e79336be1362c2b3e83d4c
+      uses: StephaneBour/actions-php-lint@8.2
+          
+    
