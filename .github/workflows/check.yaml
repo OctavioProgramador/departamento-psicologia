@@ -9,9 +9,9 @@ jobs:
     steps:
     - name: Get latest code
       uses: actions/checkout@v2
-    - name: PHP Syntax Checker (Lint)
+    - name: PHP Lint
       # You may pin to the exact commit or the version.
-      # uses: StephaneBour/actions-php-lint@ec7976a43271a60518e79336be1362c2b3e83d4c
-      uses: StephaneBour/actions-php-lint@8.2
+      # uses: michaelw90/PHP-Lint@0d9e19434b05c780f6cc87fa573bbc6061dbfe24
+      uses: michaelw90/PHP-Lint@2.1.0
           
     
